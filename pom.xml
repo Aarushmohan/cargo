@@ -23,8 +23,9 @@
     <!-- We need to use the PrimeFaces repository -->
     <repositories>
         <repository>
-            <id>primefaces</id>
-            <url>http://repository.primefaces.org</url>
+            <id>nexus</id>
+            <name>cargo-release</name> 
+            <url>http://10.12.124.82:8081/repository/cargo-release/</url>
         </repository>
     </repositories>
 
