@@ -39,10 +39,7 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
-        </dependencies>
-    
-
-    <dependencies>
+       
         <!-- Java EE API -->
         <dependency>
             <groupId>javax</groupId>
