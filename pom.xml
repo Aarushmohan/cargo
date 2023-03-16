@@ -100,6 +100,64 @@
             <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
             <scope>test</scope>
         </dependency>
+                 <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-distribution</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-rio</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>jfact</artifactId>
+        </dependency>
+                 <dependency>
+                <groupId>net.sourceforge.owlapi</groupId>
+                <artifactId>owlapi-distribution</artifactId>
+                <version>[4.0.2,)</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.owlapi</groupId>
+                <artifactId>owlapi-rio</artifactId>
+                <version>[4.0.2,)</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.owlapi</groupId>
+                <artifactId>jfact</artifactId>
+                <version>4.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.7</version>
+            </dependency>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>[6.9.8,)</version>
+                <scope>test</scope>
+            </dependency>
+                 <dependency>
+                    <groupId>org.jboss.arquillian.container</groupId>
+                    <artifactId>arquillian-wls-remote-12.1.2</artifactId>
+                    <version>1.0.0.Alpha3</version>
+                    <scope>test</scope>
+                </dependency>
+                 <dependency>
+                    <groupId>org.jboss.arquillian.container</groupId>
+                    <artifactId>arquillian-glassfish-remote-3.1</artifactId>
+                    <version>1.0.0.CR4</version>
+                    <scope>test</scope>
+                </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -151,14 +209,7 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <dependencies>
-                <dependency>
-                    <groupId>org.jboss.arquillian.container</groupId>
-                    <artifactId>arquillian-glassfish-remote-3.1</artifactId>
-                    <version>1.0.0.CR4</version>
-                    <scope>test</scope>
-                </dependency>
-            </dependencies>
+          
             <build>
                 <plugins>
                     <plugin>
@@ -180,59 +231,7 @@
                 </plugins>
             </build>
         </profile>
-             <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>net.sourceforge.owlapi</groupId>
-                <artifactId>owlapi-distribution</artifactId>
-                <version>[4.0.2,)</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sourceforge.owlapi</groupId>
-                <artifactId>owlapi-rio</artifactId>
-                <version>[4.0.2,)</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sourceforge.owlapi</groupId>
-                <artifactId>jfact</artifactId>
-                <version>4.0.2</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>1.7.7</version>
-            </dependency>
-            <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>[6.9.8,)</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-   
-
-    <dependencies>
-        <dependency>
-            <groupId>net.sourceforge.owlapi</groupId>
-            <artifactId>owlapi-distribution</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.owlapi</groupId>
-            <artifactId>owlapi-rio</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.owlapi</groupId>
-            <artifactId>jfact</artifactId>
-        </dependency>
-    </dependencies>
+           
 
         <!-- WebLogic Profile -->
         <profile>
@@ -243,15 +242,7 @@
             <properties>
                 <webapp.graphTraversalUrl>http://localhost:7001/cargo-tracker/rest/graph-traversal/shortest-path</webapp.graphTraversalUrl>
             </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>org.jboss.arquillian.container</groupId>
-                    <artifactId>arquillian-wls-remote-12.1.2</artifactId>
-                    <version>1.0.0.Alpha3</version>
-                    <scope>test</scope>
-                </dependency>
-            </dependencies>
-        </dependencyManagement>
+           
            
         </profile>
     </profiles>
